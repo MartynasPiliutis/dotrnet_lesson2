@@ -72,8 +72,14 @@ namespace ConsoleApp6
             rectangleWidth = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Staciakampio plotas yra {0}", rectangleHeight*rectangleWidth);
-
             Console.ReadLine();
+
+            string tekstas;
+            var kazkas = "";
+            Console.Write("Iveskite teksta: ");
+            tekstas = Console.ReadLine();
+            kazkas = Console.WriteLine(tekstas);
+            Console.WriteLine("Eilute tuscia -> {0}", kazkas);
 
         }
     }
