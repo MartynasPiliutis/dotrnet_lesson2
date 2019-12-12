@@ -28,6 +28,24 @@ namespace ConsoleApp6
 
             Console.WriteLine("A = {0} B = {1}", numA, numB);
             Console.ReadLine();
+
+            double num1;
+            double num2;
+            Console.Write("Iveskite pirma skaiciu: ");
+            num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Iveskite antra skaiciu: ");
+            num2 = Convert.ToDouble(Console.ReadLine());
+
+            if (num1==num2)
+            {
+                Console.WriteLine("{0} lygu {1}", num1, num2);
+            }
+            else
+            {
+                Console.WriteLine("{0} nelygu {1}", num1, num2);
+            }
+
+            Console.ReadLine();
         }
     }
 }
