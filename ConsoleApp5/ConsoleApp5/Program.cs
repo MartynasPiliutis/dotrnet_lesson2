@@ -54,7 +54,7 @@ namespace ConsoleApp5
 
             String diffDays = (endDate - startDate).TotalDays.ToString();
             Console.WriteLine(diffDays);
-            Console.WriteLine(Convert.ToDouble(diffDays)/7);
+            Console.WriteLine(Convert.ToInt32(diffDays)/7);
 
 
             Console.WriteLine("Mokyklos pavadinimas: {0}", schoolName);
