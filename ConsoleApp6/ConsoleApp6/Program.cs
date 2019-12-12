@@ -36,14 +36,16 @@ namespace ConsoleApp6
             Console.Write("Iveskite antra skaiciu: ");
             num2 = Convert.ToDouble(Console.ReadLine());
 
-            if (num1==num2)
+            /*if (num1==num2)
             {
                 Console.WriteLine("{0} lygu {1}", num1, num2);
             }
             else
             {
                 Console.WriteLine("{0} nelygu {1}", num1, num2);
-            }
+            }*/
+
+            Console.WriteLine(num1==num2);
 
             Console.ReadLine();
 
@@ -59,6 +61,18 @@ namespace ConsoleApp6
             Console.WriteLine("{0} -1 lygu {1}", num4, num4--);
             Console.WriteLine(num3);
             Console.WriteLine(num4);
+            Console.ReadLine();
+
+            double rectangleHeight;
+            double rectangleWidth;
+
+            Console.Write("Iveskite staciakampio auksti: ");
+            rectangleHeight = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Iveskite staciakampio ploti: ");
+            rectangleWidth = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Staciakampio plotas yra {0}", rectangleHeight*rectangleWidth);
+
             Console.ReadLine();
 
         }
