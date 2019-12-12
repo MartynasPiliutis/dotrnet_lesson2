@@ -46,6 +46,21 @@ namespace ConsoleApp6
             }
 
             Console.ReadLine();
+
+            double num3;
+            double num4;
+            Console.Write("Iveskite pirma skaiciu: ");
+            num3 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Iveskite antra skaiciu: ");
+            num4 = Convert.ToDouble(Console.ReadLine());
+            //double num5 = num3++;
+            //double num6 = num4--;
+            Console.WriteLine("{0} +1 lygu {1}", num3, num3++);
+            Console.WriteLine("{0} -1 lygu {1}", num4, num4--);
+            Console.WriteLine(num3);
+            Console.WriteLine(num4);
+            Console.ReadLine();
+
         }
     }
 }
