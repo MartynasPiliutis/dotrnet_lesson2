@@ -57,8 +57,8 @@ namespace ConsoleApp6
             num4 = Convert.ToDouble(Console.ReadLine());
             //double num5 = num3++;
             //double num6 = num4--;
-            Console.WriteLine("{0} +1 lygu {1}", num3, num3++);
-            Console.WriteLine("{0} -1 lygu {1}", num4, num4--);
+            Console.WriteLine("{0} +1 lygu {1}", num3++, num3);
+            Console.WriteLine("{0} -1 lygu {1}", num4--, num4);
             Console.WriteLine(num3);
             Console.WriteLine(num4);
             Console.ReadLine();
@@ -74,13 +74,11 @@ namespace ConsoleApp6
             Console.WriteLine("Staciakampio plotas yra {0}", rectangleHeight*rectangleWidth);
             Console.ReadLine();
 
-            string tekstas;
-            var kazkas = "";
+            string text = "";
             Console.Write("Iveskite teksta: ");
-            tekstas = Console.ReadLine();
-            kazkas = Console.WriteLine(tekstas);
-            Console.WriteLine("Eilute tuscia -> {0}", kazkas);
-
+            text = Console.ReadLine();
+            Console.WriteLine("Eilute tuscia -> {0}", (text == string.Empty));
+            Console.ReadLine();
         }
     }
 }
