@@ -72,6 +72,15 @@ namespace ConsoleApp6
             number = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("{0} <= 0 -> {1}", number, (number <= 0));
             Console.ReadLine();
+
+            string name = "";
+            string lastName = "";
+            Console.Write("Iveskite varda: ");
+            name = Console.ReadLine();
+            Console.Write("Iveskite pavarde: ");
+            lastName = Console.ReadLine();
+            Console.WriteLine(name + " " + lastName);
+            Console.ReadLine();
         }
     }
 }
