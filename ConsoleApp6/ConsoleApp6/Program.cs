@@ -35,18 +35,7 @@ namespace ConsoleApp6
             num1 = Convert.ToDouble(Console.ReadLine());
             Console.Write("Iveskite antra skaiciu: ");
             num2 = Convert.ToDouble(Console.ReadLine());
-
-            /*if (num1==num2)
-            {
-                Console.WriteLine("{0} lygu {1}", num1, num2);
-            }
-            else
-            {
-                Console.WriteLine("{0} nelygu {1}", num1, num2);
-            }*/
-
             Console.WriteLine(num1==num2);
-
             Console.ReadLine();
 
             double num3;
@@ -55,8 +44,6 @@ namespace ConsoleApp6
             num3 = Convert.ToDouble(Console.ReadLine());
             Console.Write("Iveskite antra skaiciu: ");
             num4 = Convert.ToDouble(Console.ReadLine());
-            //double num5 = num3++;
-            //double num6 = num4--;
             Console.WriteLine("{0} +1 lygu {1}", num3++, num3);
             Console.WriteLine("{0} -1 lygu {1}", num4--, num4);
             Console.WriteLine(num3);
@@ -78,6 +65,12 @@ namespace ConsoleApp6
             Console.Write("Iveskite teksta: ");
             text = Console.ReadLine();
             Console.WriteLine("Eilute tuscia -> {0}", (text == string.Empty));
+            Console.ReadLine();
+
+            double number;
+            Console.Write("Iveskite skaiciu: ");
+            number = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("{0} <= 0 -> {1}", number, (number <= 0));
             Console.ReadLine();
         }
     }
